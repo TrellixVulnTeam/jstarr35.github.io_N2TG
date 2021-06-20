@@ -1,6 +1,7 @@
 ---
 ---
-@import "main";
-.current {
-  color: green;
+@import "{{ site.theme }}";
+
+html {
+    background-color: darkgrey;
 }
