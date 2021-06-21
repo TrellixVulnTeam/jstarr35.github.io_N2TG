@@ -5,7 +5,7 @@
 ### Android Projects
 
 [HerdOne for Android](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/hoa.gif?raw=true"/>
 
 ---
 [Etsy Shop Assistant](/pdf/sample_presentation.pdf)
