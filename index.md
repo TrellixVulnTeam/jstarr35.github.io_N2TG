@@ -5,11 +5,13 @@
 ### Android Projects
 
 [HerdOne for Android](/sample_page)
-<img src="images/hoa.gif?raw=true"/>
+</br>
+<img src="images/hoa.gif?raw=true" width="200"/>
 
 ---
 [Etsy Shop Assistant](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+</br>
+<img src="images/rog-logo-v3.jpg?raw=true" width="400"/>
 
 ---
 
