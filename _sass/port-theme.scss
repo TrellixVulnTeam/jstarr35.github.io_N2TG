@@ -1,0 +1,87 @@
+@import "fonts";
+
+body {
+  background-color: #3F4441;
+  padding: 50px;
+  font: 14px/1.5 "DejaVu Sans";
+  color: #E9FFF7
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#BA7967;
+  margin:0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+h2 {
+  color:#FFDECF;
+}
+
+h3, h4, h5, h6 {
+  color:#FFDECF;
+}
+
+a {
+  color:#267CB9;
+  text-decoration:none;
+}
+
+a:hover, a:focus {
+  color:#069;
+  font-weight: bold;
+}
+
+/* HOLY GRAIL LAYOUT */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main {
+  /* Take the remaining height */
+  flex-grow: 1;
+
+  /* Layout the left sidebar, main content and right sidebar */
+  display: flex;
+  flex-direction: row;
+}
+
+.container__left {
+  width: 25%;
+}
+
+.container__middle {
+  /* Take the remaining width */
+  flex-grow: 1;
+}
+
+.container__right {
+  width: 20%;
+}
+
+/* SPLIT NAVIGATION */
+.nav-container {
+  /* Content is centered horizontally */
+  align-items: center;
+  display: flex;
+
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav__item--right {
+  /* Sticks to the right */
+  margin-left: auto;
+}
