@@ -1,5 +1,11 @@
 @import "fonts";
 
+:root {
+  --link-color: #719192;
+
+  font-family: "DejaVu Sans", Verdana, sans-serif;
+}
+
 body {
   background-color: #3F4441;
   padding: 50px;
@@ -33,14 +39,34 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#267CB9;
+  color:#719192;
   text-decoration:none;
+  outline: none;
+  padding: 2px 1px 0;
+}
+a:link {
+  color:#719192;
 }
 
-a:hover, a:focus {
-  color:#069;
-  font-weight: bold;
+a:visited {
+color: #E1F4F3;
 }
+
+a:focus {
+border-bottom: 1px solid;
+  background: #b4ffb2;
+}
+
+a:hover {
+border-bottom: 1px solid;
+  background: #75ae73
+}
+
+a:active {
+  background: #4384ba;
+  color: #CDFEAA;
+}
+
 
 /* HOLY GRAIL LAYOUT */
 .container {
