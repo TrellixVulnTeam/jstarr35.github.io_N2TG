@@ -15,17 +15,6 @@
 
 ---
 
----
-
 ### ASP.NET Projects
 
 - [HerdOne](http://herdone.com/)
-
-
----
-
-
-
-
----
-
