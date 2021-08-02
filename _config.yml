@@ -1,5 +1,7 @@
 title: Jason Starr # your name (or website title) here
 logo: "/images/jason_profile@2x.png?raw=true" # your photo (or logo) here
+slogo: "/images/s_logo.png?raw=true"
+name_heading: "/images/jstarr.png?raw=true"
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Android Projects
   <br><br>
