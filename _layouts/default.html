@@ -18,7 +18,7 @@
      
       <div class="container">
         <header>
-            <h1 class="level"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+            <h1 class="level"><a href="{{ "/" | absolute_url }}">{{ site.name_heading | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
           <img class="logo" src="{{site.logo | relative_url}}" alt="Logo" />
@@ -62,7 +62,10 @@
        </div>
           </nav>
         </main>
-        <footer>
+        <footer class="footer">
+          {% if site.logo %}
+          <img class="logo" src="{{site.slogo | relative_url}}" alt="AltLogo" />
+        {% endif %}
           
         </footer>
      
