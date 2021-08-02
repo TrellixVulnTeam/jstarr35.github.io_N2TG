@@ -18,7 +18,8 @@
      
       <div class="container">
         <header>
-            <h1 class="level"><a href="{{ "/" | absolute_url }}">{{ site.name_heading | default: site.github.repository_name }}</a></h1>
+           <!--  <h1 class="level"><a href="{{ "/" | absolute_url }}">{{ site.name_heading | default: site.github.repository_name }}</a></h1> -->
+          <img src="{{site.name_heading | relative_url}}" alt="Logo" />
         
         {% if site.logo %}
           <img class="logo" src="{{site.logo | relative_url}}" alt="Logo" />
