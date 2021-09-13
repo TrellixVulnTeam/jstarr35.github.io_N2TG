@@ -1,0 +1,135 @@
+@use '~@angular/material' as mat;
+@include mat.core();
+@import "bootstrap/dist/css/bootstrap.min.css";
+$md-cement: (
+    50 : #f8f6f4,
+    100 : #d8cfc7,
+    200 : #c1b3a6,
+    300 : #a48f7c,
+    400 : #987f6a,
+    500 : #86705d,
+    600 : #746150,
+    700 : #625244,
+    800 : #504337,
+    900 : #3e342b,
+    A100 : #f8f0ea,
+    A200 : #ddbc9f,
+    A400 : #b18865,
+    A700 : #9b7c61,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-asparagus: (
+    50 : #fdfefc,
+    100 : #d3e4ca,
+    200 : #b4d1a5,
+    300 : #8db876,
+    400 : #7cae62,
+    500 : #6d9f52,
+    600 : #5f8b48,
+    700 : #51773d,
+    800 : #436233,
+    900 : #364e28,
+    A100 : #f7fcf4,
+    A200 : #bae9a1,
+    A400 : #83c55f,
+    A700 : #78b258,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$burnt_sienna: #E76F51;
+$thunder: #342e33;
+$darkstarr: #232323;
+$black_coffee: #342E33;
+$pharlap: rgba(163,128,116,255);
+$shady_lady: rgba(171,166,171,255);
+$gray_nurse: rgba(244,245,244,255);
+$sundance: rgba(205,160,92,255);
+$potters_clay: rgba(126,93,53,255);
+$tuatara: rgba(45,45,44,255);
+$clement: rgba(151,128,104,255);
+$soft_peach: rgba(244,237,241,255);
+$santa-fe: #b97b58;
+
+$cement: #86705D;
+$pampas: rgba(241,240,233,255);
+$natural_gray: rgba(148,144,143,255);
+$asparagus: #6d9f52;
+$pomegranate: #f44336;
+$carrot_orange: #ea8f1a;
+
+$portfolio-primary: mat.define-palette($md-cement);
+$portfolio-accent: mat.define-palette($md-asparagus);
+$portfolio-warn: mat.define-palette(mat.$red-palette);
+$portfolio-typography: mat.define-typography-config(
+  $font-family: 'Open Sans'
+);
+$portfolio-dark-theme: mat.define-dark-theme((
+color: (
+  primary: $portfolio-primary,
+  accent: $portfolio-accent,
+),
+typography: $portfolio-typography,
+));
+
+//@include mat.all-component-themes($portfolio-theme);
+// Apply the dark theme by default
+//@include mat.core-theme($portfolio-dark-theme);
+@include mat.all-component-themes($portfolio-dark-theme);
+
+.dark-theme {
+  $primary-dark: mat.define-palette(mat.$light-blue-palette, 700);
+    $accent-dark: mat.define-palette(mat.$gray-palette);
+    $warn-dark: mat.define-palette(mat.$red-palette);
+
+    $theme-dark: mat.define-dark-theme($primary-dark, $accent-dark, $warn-dark);
+
+    @include mat.all-component-themes($theme-dark);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+
+.my-class {
+  @include mat.elevation-transition();
+  @include mat.elevation(2);
+
+  &:active {
+    @include mat.elevation(8);
+  }
+}
