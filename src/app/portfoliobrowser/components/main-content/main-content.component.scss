@@ -4,16 +4,51 @@
   max-width: 360px;
 }
 
+
 .project-container {
-  max-height: 75vh;
-  height: 75vh;
+  overflow: unset;
+  width: 75%;
+}
+
+.project-content {
+  overflow: unset;
+  width: 40%;
 }
 
 .project-media {
-  max-height: 50vh;
+background-color: transparent;
+width: 40%;
 }
 
-.project-media img {
-  width: 100%;
-  width: 100%;
+article img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.no-flow {
+  overflow: unset;
+}
+
+.mat-tab-body-content {
+  overflow: unset;
+}
+
+header {
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+}
+
+section {
+
+  display: flex;
 }

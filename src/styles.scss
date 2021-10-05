@@ -1,4 +1,5 @@
 @use '~@angular/material' as mat;
+
 @include mat.core();
 @import "bootstrap/dist/css/bootstrap.min.css";
 $md-cement: (
@@ -92,7 +93,7 @@ $portfolio-primary: mat.define-palette($md-cement);
 $portfolio-accent: mat.define-palette($md-asparagus);
 $portfolio-warn: mat.define-palette(mat.$red-palette);
 $portfolio-typography: mat.define-typography-config(
-  $font-family: 'Open Sans'
+  $font-family: 'Roboto'
 );
 $portfolio-dark-theme: mat.define-dark-theme((
 color: (
@@ -118,7 +119,9 @@ typography: $portfolio-typography,
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+   margin: 0;
+   }
 
 .toolbar-spacer {
   flex: 1 1 auto;

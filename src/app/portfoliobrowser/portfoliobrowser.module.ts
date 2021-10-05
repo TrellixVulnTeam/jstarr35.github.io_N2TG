@@ -12,7 +12,6 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectService } from './services/project.service';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 
 const routes: Routes = [
@@ -31,8 +30,8 @@ const routes: Routes = [
     PortfoliobrowserAppComponent,
     ToolbarComponent,
     MainContentComponent,
-    SidenavComponent,
-    ContactFormComponent
+    SidenavComponent
+
   ],
   imports: [
     CommonModule,
