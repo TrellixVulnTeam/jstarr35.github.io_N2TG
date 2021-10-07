@@ -11,6 +11,7 @@ import { ProjectService } from '../../services/project.service';
 export class MainContentComponent implements OnInit {
 
   project: Project;
+  techs: string[];
   constructor(
     private route: ActivatedRoute,
     private service: ProjectService) { }
@@ -32,6 +33,7 @@ export class MainContentComponent implements OnInit {
 
         setTimeout(() => {
           this.project = this.service.projectById(id);
+          this.techs = this.project.tech;
         }, 500)
 
       });

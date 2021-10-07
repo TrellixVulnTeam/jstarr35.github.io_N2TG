@@ -5,6 +5,7 @@
     "type": "ASP.NET",
     "description": "Livestock management application created with ASP.NET Web Forms. Using Bootstrap themes and components, HerdOne offers a clean, data-driven UI.",
     "link": "https://herdone.com",
+    "tech": ["ASP.NET", "Web Forms", "JavaScript", "AJAX", "jQuery", "Microsoft SQL Server", "Entity Framework"],
     "cover": "../assets/herdoneLogo.jpg",
     "assets": []
   },
@@ -12,6 +13,7 @@
     "id": 2,
     "name": "HerdOne for Android",
     "type": "Android",
+    "tech": ["Android SDK", "Kotlin", "Room Persistence Library", "SQLite"],
     "description": "A scaled down version of HerdOne.com that allowed users to access their data and perform primary functions on their mobile device. The apps offline first design allows users to use the app even when in the field where a reliable network connection is not always available.",
     "link": "",
     "cover": "../assets/hoa.gif",
@@ -21,6 +23,7 @@
     "id": 3,
     "name": "SnapLab",
     "type": "ASP.NET MVC",
+    "tech": ["ASP.NET", "WCF", "MVC", "AJAX", "JavaScript", "jQuery", "ADO.NET", "Microsoft SQL Server"],
     "description": "An inventory management application for chemistry labs at the College and High School level. A service oreiented application using WCF.",
     "link": "",
     "cover": "../assets/SnaplabLogo.png",
