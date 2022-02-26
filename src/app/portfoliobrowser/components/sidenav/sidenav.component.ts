@@ -4,7 +4,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
-import { Project } from '../../models/project';
+import { IProject } from '../../models/project';
 import { ProjectService } from '../../services/project.service';
 
 
@@ -19,7 +19,7 @@ export class SidenavComponent implements OnInit {
 
   public isScreenSmall: boolean;
 
-  projects: Observable<Project[]>;
+  projects: Observable<IProject[]>;
   isDarkTheme: boolean = false;
   dir: string = 'ltr';
 

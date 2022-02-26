@@ -9,7 +9,10 @@
     [opened]="!isScreenSmall"
     [mode]="isScreenSmall ? 'over' : 'side'"
   >
-    <mat-toolbar color="primary"> Projects </mat-toolbar>
+
+    <mat-toolbar color="primary"> Projects</mat-toolbar>
+
+
     <mat-nav-list>
       <mat-list-item *ngFor="let project of projects | async">
         <a matLine [routerLink]="['/portfoliobrowser', project.id]">

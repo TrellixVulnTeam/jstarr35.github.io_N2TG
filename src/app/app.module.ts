@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Routes = [
   {path: 'portfoliobrowser', loadChildren: () => import('./portfoliobrowser/portfoliobrowser.module')
@@ -22,6 +23,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
 

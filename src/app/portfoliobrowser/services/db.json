@@ -7,6 +7,7 @@
     "link": "https://herdone.com",
     "tech": ["ASP.NET", "Web Forms", "JavaScript", "AJAX", "jQuery", "Microsoft SQL Server", "Entity Framework"],
     "cover": "../assets/herdoneLogo.jpg",
+    "isPortait": false,
     "assets": []
   },
   {
@@ -16,7 +17,9 @@
     "tech": ["Android SDK", "Kotlin", "Room Persistence Library", "SQLite"],
     "description": "A scaled down version of HerdOne.com that allowed users to access their data and perform primary functions on their mobile device. The apps offline first design allows users to use the app even when in the field where a reliable network connection is not always available.",
     "link": "",
-    "cover": "../assets/hoa.gif",
+    "media": "../assets/hoa.gif",
+    "cover": "../assets/hoa-logo.png",
+    "isPortait": true,
     "assets": []
   },
   {
@@ -27,6 +30,7 @@
     "description": "An inventory management application for chemistry labs at the College and High School level. A service oreiented application using WCF.",
     "link": "",
     "cover": "../assets/SnaplabLogo.png",
+    "isPortait": false,
     "assets": []
   }
 ]

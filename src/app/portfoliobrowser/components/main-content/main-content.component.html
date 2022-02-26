@@ -8,9 +8,33 @@
 
 
   <section>
+
     <h1>{{ project.name }}</h1>
     <mat-divider></mat-divider>
-    <mat-grid-list cols="4" rowHeight="fit">
+    <div fxLayout="row" fxLayoutAlign="space-around start" fxLayout.xs="column" class="project-divider">
+
+        <mat-card class="project-card">
+
+          <img mat-card-image ngClass="{'portrait-img': project.isPortrait}" [src]='project.cover' alt="Project title image">
+          <mat-card-content>
+            <p>
+              {{project.description}}
+            </p>
+          </mat-card-content>
+
+        </mat-card>
+
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Tech Stack</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <h5 *ngFor="let tech of techs">{{tech}}</h5>
+          </mat-card-content>
+        </mat-card>
+
+    </div>
+   <!--  <mat-grid-list cols="4" rowHeight="150px">
       <mat-grid-tile [colspan]="3">
         <article>
 
@@ -19,26 +43,19 @@
         </article>
       </mat-grid-tile>
     <mat-grid-tile [rowspan]="3">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Tech Stack</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <h5 *ngFor="let tech of techs">{{tech}}</h5>
-        </mat-card-content>
-      </mat-card>
+
     </mat-grid-tile>
     <mat-grid-tile [colspan]="3" [rowspan]="2">
       <article>
 
-        <img src="{{ project.cover }}" />
+        <img [src]='project.cover' />
 
       </article>
     </mat-grid-tile>
     </mat-grid-list>
 
 
-
+ -->
 
 
   </section>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../models/project';
+import { IProject } from '../models/project';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 
@@ -7,18 +7,18 @@ import { BehaviorSubject, Observable } from 'rxjs';
 @Injectable()
 export class ProjectService {
 
-  private _projects: BehaviorSubject<Project[]>;
+  private _projects: BehaviorSubject<IProject[]>;
 
   private dataStore: {
-    projects: Project[];
+    projects: IProject[];
   }
 
   constructor(private http: HttpClient) {
     this.dataStore = { projects: [ ] };
-    this._projects = new BehaviorSubject<Project[]>([]);
+    this._projects = new BehaviorSubject<IProject[]>([]);
   }
 
-  get projects(): Observable<Project[]> {
+  get projects(): Observable<IProject[]> {
     return this._projects.asObservable();
   }
 
@@ -54,7 +54,7 @@ export class ProjectService {
     // return this.http.get('db.json').map(
     //   (Reponse)=>Reponse.json()
     // )
-    return this.http.get<Project[]>('app/portfoliobrowser/services/db.json')
+    return this.http.get<IProject[]>('app/portfoliobrowser/services/db.json')
       .subscribe(data => {
         this.dataStore.projects = data;
         this._projects.next(Object.assign({}, this.dataStore).projects);

@@ -20,11 +20,8 @@ background-color: transparent;
 width: 40%;
 }
 
-article img {
-  max-height: 400px;
-  max-width: 400px;
-  margin-left: 0px;
-  margin-top: 0px;
+.project-divider {
+  margin-bottom: 50px;
 }
 
 .no-flow {
@@ -55,3 +52,9 @@ section {
   height: 750px;
 }
 
+.sidebar {
+  --offset: var(--space);
+  /* ... */
+  position: sticky;
+  top: var(--offset);
+}

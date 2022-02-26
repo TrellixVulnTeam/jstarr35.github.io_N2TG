@@ -1,10 +1,10 @@
-export class Contact {
-  public contactId: number;
-  public firstName: string;
-  public lastName: string;
-  public email?: string;
-  public phone?: string;
-  public comment?: string;
+export interface IContact {
+   contactId: number;
+   firstName: string;
+   lastName: string;
+   email?: string;
+   phone?: string;
+   comment?: string;
 
 
 }

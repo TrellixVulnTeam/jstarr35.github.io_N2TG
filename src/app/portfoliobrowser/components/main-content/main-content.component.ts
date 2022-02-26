@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Project } from '../../models/project';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { IProject } from '../../models/project';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 
@@ -10,7 +10,7 @@ import { ProjectService } from '../../services/project.service';
 })
 export class MainContentComponent implements OnInit {
 
-  project: Project;
+  project: IProject;
   techs: string[];
   constructor(
     private route: ActivatedRoute,
